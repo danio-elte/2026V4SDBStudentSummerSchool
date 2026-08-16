@@ -1,0 +1,61 @@
+---
+title: "2026 V4SDB Student Summer School Programme"
+---
+
+## Preliminary programme {.unnumbered}
+
+### Tuesday, September 1
+
+| Time          | Activity                                    |
+|:--------------|:--------------------------------------------|
+| 13:00-14:00   | Registration                                |
+| 14:00-16:00   | **"Spatial Biology: Towards Decoding Tissue Architecture in Development, Health and Disease"**<br> *Open Lecture* by Enikő Lázár (KTH Royal Institute of Technology)<br>
+Room 0-821 (Bolyai János terem) |
+| 16:00-18:00   | Student Flash Talks<br> Room 7-424 (Bioinformatics Lab) |
+
+### Wednesday, September 2
+
+| Time          | Activity                                    |
+|:--------------|:--------------------------------------------|
+| 09:00-13:00   | KTH Practical Block No. 1 — Raphaël Mauron  |
+| 13:00-14:00   | Lunch                                       |
+| 14:00-15:00   | **"Use of Visium/Xenium spatial transcriptomics to understand mechanisms of brain disorders"**<br> Konstantin Khodosevich (BRIC, University of Copenhagen) — online |
+| 15:00-18:00   | BRIC Practical Block — Katarina Dragicevic  |
+
+### Thursday, September 3
+
+| Time          | Activity                                    |
+|:--------------|:--------------------------------------------|
+| 09:00-09:40   | Bruker Hive Presentation                    |
+| 09:40-10:00   | Break                                       |
+| 10:00-13:00   | KTH Practical Block No. 2 — Sergio Marco Salas |
+| 13:00-14:00   | Lunch                                       |
+| 14:00-14:40   | 10x Genomics/Genetica Presentation          |
+| 14:40-15:00   | Break                                       |
+| 15:00-18:00   | KTH Practical Block No. 3 — Shouzhen Bao    |
+
+### Friday, September 4
+
+| Time          | Activity                                    |
+|:--------------|:--------------------------------------------|
+| 09:00-12:00   | *Talks on MERFISH:*<br><br> **"Image-Based Spatial Transcriptomics with smFISH: From Probe Design to Image Analysis"** — Jonathan Enriquez (Institut de Génomique Fonctionnelle de Lyon) — in person<br><br> **"Whole-embryo spatiotemporal transcriptomics at subcellular resolution"** — Yinan Wan (University of Basel) — online |
+| 12:00-14:00   | MERFISH Practical                 |
+
+::: {.callout-note}
+## Programme notes
+- Except for the opening lecture (delivered in room 0-821), all the classes of the workshop will take place in the Bioinformatics Lab of the Biology Institute, room 7-424 
+- All sessions include breaks to maintain engagement and provide networking opportunities
+- The Bruker Hive and 10x Genomics/Genetica sponsor presentations are scheduled for 40 minutes each (Thursday 09:00-09:40 and 14:00-14:40); the remaining 20 minutes of each hour are kept as a short break
+- Konstantin Khodosevich's session (Wednesday) and Yinan Wan's talk (Friday) will be delivered online
+:::
+
+
+## Location {.unnumbered}
+
+The Summer School will take place on the premises of the Faculty of Science of ELTE Eötvös Loránd University - Pázmány Péter stny. 1/A, 1117 Budapest. Lectures will be in room 0.83 ("Eötvös terem") - follow the signs.
+
+```{=html}
+<center>
+<iframe style="border:none" src="https://mapy.com/s/gagelegota" width="500" height="350" frameborder="0"></iframe>
+</center>
+```

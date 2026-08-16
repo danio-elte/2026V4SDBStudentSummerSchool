@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "2026 V4SDB Student Winter School"
+  sidebar:
+    style: "docked"
+    logo: "images/2026-V4SDBSummerSchool_logo.jpg"
+    title: "2026 V4SDB Student Summer School Materials" 
+    pinned: true
+    search: true
+    page-footer: "Copyright 2026, Máté Varga"  
+    contents:
+      - text: "Introduction"
+        href: index.qmd 
+      - text: "Programme"
+        href: programme.qmd
+ 
+   
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

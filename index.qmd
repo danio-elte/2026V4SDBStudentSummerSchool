@@ -29,12 +29,14 @@ Accepted applicants will need to have an active [V4SDB membership](https://www.v
 
 ## Funding
 
-::: {layout="[[1, 1], [1, 1]]"}
+::: {layout="[[1, 1], [2, 1, 2]]"}
 ![](images/CoB_logo_AW_RGB_bleed.jpg)
 
 ![](images/elte_logo.png)
 
 ![](images/Bruker-Logo.png)
+
+![](images/genetica_logo.png)
 
 ![](images/IGATech-Beyond-sequencing_logo.png)
 :::
