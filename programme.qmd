@@ -9,7 +9,7 @@ title: "2026 V4SDB Student Summer School Programme"
 | Time          | Activity                                    |
 |:--------------|:--------------------------------------------|
 | 13:00-14:00   | Registration                                |
-| 14:00-16:00   | **"Spatial Biology: Towards Decoding Tissue Architecture in Development, Health and Disease"**<br> *Open Lecture* by Enikő Lázár (KTH Royal Institute of Technology)<br> Room 0-821 (Bolyai János terem) |
+| 14:00-16:00   | **"Spatial Biology: Towards Decoding Tissue Architecture in Development, Health and Disease"**<br> *Public Lecture* by Enikő Lázár (KTH Royal Institute of Technology)<br> Room 0-821 (Bolyai János terem) |
 | 16:00-18:00   | Student Flash Talks<br> Room 7-424 (Bioinformatics Lab) |
 
 ### Wednesday, September 2
