@@ -9,8 +9,7 @@ title: "2026 V4SDB Student Summer School Programme"
 | Time          | Activity                                    |
 |:--------------|:--------------------------------------------|
 | 13:00-14:00   | Registration                                |
-| 14:00-16:00   | **"Spatial Biology: Towards Decoding Tissue Architecture in Development, Health and Disease"**<br> *Open Lecture* by Enikő Lázár (KTH Royal Institute of Technology)<br>
-Room 0-821 (Bolyai János terem) |
+| 14:00-16:00   | **"Spatial Biology: Towards Decoding Tissue Architecture in Development, Health and Disease"**<br> *Open Lecture* by Enikő Lázár (KTH Royal Institute of Technology)<br> Room 0-821 (Bolyai János terem) |
 | 16:00-18:00   | Student Flash Talks<br> Room 7-424 (Bioinformatics Lab) |
 
 ### Wednesday, September 2
@@ -52,7 +51,7 @@ Room 0-821 (Bolyai János terem) |
 
 ## Location {.unnumbered}
 
-The Summer School will take place on the premises of the Faculty of Science of ELTE Eötvös Loránd University - Pázmány Péter stny. 1/A, 1117 Budapest. Lectures will be in room 0.83 ("Eötvös terem") - follow the signs.
+The Summer School will take place on the premises of the Faculty of Science of ELTE Eötvös Loránd University - Pázmány Péter stny. 1/C, 1117 Budapest. 
 
 ```{=html}
 <center>
