@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Visium spatial transcriptomics (heart sections) – 2026 V4SDB Student Winter School</title>
+<title>Mapping Biology in Space — DBiT-seq and the Basics of Spatial Multi-Omics Analysis – 2026 V4SDB Student Winter School</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./visium.html">Sessions</a></li><li class="breadcrumb-item"><a href="./visium.html">Visium</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./visium.html">Sessions</a></li><li class="breadcrumb-item"><a href="./v4sdb-DBiT-seq.html">DBiT-seq</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -130,13 +130,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./visium.html" class="sidebar-item-text sidebar-link active">
+  <a href="./visium.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visium</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./v4sdb-DBiT-seq.html" class="sidebar-item-text sidebar-link">
+  <a href="./v4sdb-DBiT-seq.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">DBiT-seq</span></a>
   </div>
 </li>
@@ -152,10 +152,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#workshop-overview" id="toc-workshop-overview" class="nav-link active" data-scroll-target="#workshop-overview">Workshop Overview</a>
+  <li><a href="#workshop-overview" id="toc-workshop-overview" class="nav-link active" data-scroll-target="#workshop-overview">Workshop Overview</a></li>
+  <li><a href="#what-the-session-covers" id="toc-what-the-session-covers" class="nav-link" data-scroll-target="#what-the-session-covers">What the session covers</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#format" id="toc-format" class="nav-link" data-scroll-target="#format">Format</a>
   <ul class="collapse">
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
-  <li><a href="#walkthrough" id="toc-walkthrough" class="nav-link" data-scroll-target="#walkthrough">Walkthrough</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -163,9 +165,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./visium.html">Sessions</a></li><li class="breadcrumb-item"><a href="./visium.html">Visium</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./visium.html">Sessions</a></li><li class="breadcrumb-item"><a href="./v4sdb-DBiT-seq.html">DBiT-seq</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Visium spatial transcriptomics (heart sections)</h1>
+<h1 class="title">Mapping Biology in Space — DBiT-seq and the Basics of Spatial Multi-Omics Analysis</h1>
 </div>
 
 
@@ -184,19 +186,43 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Training materials for the 2026 V4SDB Student Summer School</p>
 <p><strong>Instructor:</strong></p>
-<p>Raphaël Mauron (KTH Royal Institute of Technology, Stockholm)<br>
-raphael.mauron@scilifelab.se</p>
+<p>Shuozhen Bao (KTH Royal Institute of Technology, Stockholm)<br>
+shuozhen.bao@scilifelab.se</p>
 <section id="workshop-overview" class="level2">
 <h2 class="anchored" data-anchor-id="workshop-overview">Workshop Overview</h2>
-<p>In developmental biology, spatial transcriptomics allows researchers to measure gene expression while preserving the tissue’s spatial organization, revealing how cell types and gene programs are arranged across an organ as it forms. However, working with spatial data introduces challenges not present in standard single-cell analysis: each measurement reflects a mixture of cells at a fixed position, and deciding what signal to keep versus filter out is a central part of the analysis. This workshop aims to demonstrate the effective utilization of <code>10x Genomics Visium</code> data through hands-on analysis of embryonic heart sections. Participants will work step by step through loading, filtering, processing, and clustering spatial transcriptomics data in <code>R</code> using the <code>semla</code> and <code>Seurat</code> packages, first on a single tissue section and then across three sections spanning different developmental ages, drawing on data from a published atlas of the developing human heart.</p>
-<p>By the end of this workshop, participants will be familiar with loading and visualizing Visium data, will have filtered and clustered spots into biologically meaningful groups and mapped them onto tissue anatomy, and will know how to identify cluster-defining genes, correct for batch effects across multiple sections, and explore how gene expression changes across developmental stages.</p>
+<p>Sequencing tells you <em>what</em> molecules are present in a sample; it rarely tells you <em>where</em>. Bulk sequencing averages an entire tissue into one profile, and single-cell sequencing resolves individual cells only by dissociating the tissue and destroying their spatial context. Spatial multi-omics closes that gap: it keeps each molecular readout pinned to its original (x, y) position in the tissue.</p>
+<p>This session introduces spatial multi-omics analysis through <strong>DBiT-seq</strong> (Deterministic Barcoding in Tissue), a microfluidic method that stamps a barcode grid directly onto a tissue section. Two perpendicular sets of channels tag every pixel with a unique barcode combination, so RNA, chromatin accessibility (ATAC), and protein (via antibody-derived tags) can all be measured <strong>on the same pixels of the same section</strong> — three molecular layers, one spatial grid.</p>
+<p>Participants work hands-on in a browser-based notebook (no installation required) with a real published dataset: a P21 mouse brain profiled by spatial ARP-seq (ATAC + RNA + Protein) from Zhang et al., <em>Nature</em> 647, 213–227 (2025). No programming background is assumed — most cells are pre-written and simply run and read; a handful of “Your turn” cells invite participants to change one value and observe the effect.</p>
+</section>
+<section id="what-the-session-covers" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-session-covers">What the session covers</h2>
+<ul>
+<li><strong>Why spatial multi-omics</strong> — how it differs from bulk and single-cell sequencing, and where DBiT-seq sits relative to other platforms (e.g., Visium HD, spatial ATAC-seq).</li>
+<li><strong>Reading the figures</strong> — how to interpret the chart types common to omics papers: bar plots, heatmaps, dot plots, and GO/KEGG enrichment as bubble plots or networks.</li>
+<li><strong>The tissue and the study</strong> — mouse cortical anatomy at postnatal day 21 (layered neurons, the myelinating corpus callosum) and what the source paper found: cortical layers sharpen and the corpus callosum myelinates over development, with chromatin accessibility changes preceding transcriptional changes at the same loci.</li>
+<li><strong>Hands-on analysis</strong> — loading and aligning the three molecular tables to a shared pixel grid, checking tissue orientation, visualizing RNA/ATAC/protein signal for the same gene, handling sparse ATAC signal by aggregating gene programmes, and normalizing each modality.</li>
+<li><strong>Validation</strong> — plotting a panel of known cortical-layer marker genes (Cux2, Rasgrf2, Rorb, Bcl11b, Foxp2, Tle4, Mbp, Plp1) and checking that they land in the expected anatomical layers, as the criterion for trusting the rest of the analysis.</li>
+</ul>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of the session, participants should be able to:</p>
+<ol type="1">
+<li>Explain what spatial multi-omics adds over bulk and single-cell sequencing.</li>
+<li>Describe how DBiT-seq co-registers RNA, ATAC, and protein measurements to the same tissue pixels.</li>
+<li>Read and interpret the standard chart types used to report omics results.</li>
+<li>Load, align, and visualize multi-modal spatial data in a shared coordinate system.</li>
+<li>Use known anatomical markers to validate that a spatial dataset is correctly oriented and biologically sound before drawing further conclusions.</li>
+</ol>
+</section>
+<section id="format" class="level2">
+<h2 class="anchored" data-anchor-id="format">Format</h2>
+<p>Self-paced, browser-based (Google Colab), roughly following five blocks: environment setup, why spatial multi-omics, reading the figures, the tissue and the study, and hands-on analysis with validation. Demonstrators are available throughout for troubleshooting.</p>
 <section id="slides" class="level3">
 <h3 class="anchored" data-anchor-id="slides">Slides</h3>
-<iframe src="sessions/visium-heart-slides.html" width="100%" height="900" style="border:none;"></iframe>
-</section>
-<section id="walkthrough" class="level3">
-<h3 class="anchored" data-anchor-id="walkthrough">Walkthrough</h3>
-<iframe src="sessions/visium-heart-walkthrough.html" width="100%" height="900" style="border:none;"></iframe>
+<iframe src="sessions/DBiT-seq_slides.html" width="100%" height="900" style="border:none;"></iframe>
+<p><strong>Jupyter notebook:</strong> <a href="notebooks/V4SDB_DBiT-ARP_handson.ipynb">Download it from here</a></p>
+<p><strong>Dataset:</strong> Zhang, D. et al.&nbsp;(2025). <em>Spatial dynamics of brain development and neuroinflammation.</em> Nature 647, 213–227. doi:10.1038/s41586-025-09663-y — RNA: GEO GSE308526 · ATAC: GEO GSE308599 · Protein: NeMO Archive.</p>
 
 
 </section>

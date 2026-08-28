@@ -1,22 +1,24 @@
 [
   {
-    "objectID": "index.html#confirmed-lecturers",
-    "href": "index.html#confirmed-lecturers",
-    "title": "2026 V4SDB Student Summer School Information",
-    "section": "Confirmed lecturers",
-    "text": "Confirmed lecturers\n\nEnikő Lázár - KTH Royal Institute of Technology\nYinan Wan - Biozentrum, University of Basel\nJonathan Enriques - Institut de Génomique Fonctionnelle de Lyon\nKonstantin Khodosevich - BRIC University of Copenhagen\n\nOrganizer:\n\nMáté Varga - ELTE Eötvös Loránd University, Budapest, Hungary",
+    "objectID": "visium.html",
+    "href": "visium.html",
+    "title": "Visium spatial transcriptomics (heart sections)",
+    "section": "",
+    "text": "Training materials for the 2026 V4SDB Student Summer School\nInstructor:\nRaphaël Mauron (KTH Royal Institute of Technology, Stockholm)\nraphael.mauron@scilifelab.se",
     "crumbs": [
-      "Introduction"
+      "Sessions",
+      "Visium"
     ]
   },
   {
-    "objectID": "index.html#funding",
-    "href": "index.html#funding",
-    "title": "2026 V4SDB Student Summer School Information",
-    "section": "Funding",
-    "text": "Funding",
+    "objectID": "visium.html#workshop-overview",
+    "href": "visium.html#workshop-overview",
+    "title": "Visium spatial transcriptomics (heart sections)",
+    "section": "Workshop Overview",
+    "text": "Workshop Overview\nIn developmental biology, spatial transcriptomics allows researchers to measure gene expression while preserving the tissue’s spatial organization, revealing how cell types and gene programs are arranged across an organ as it forms. However, working with spatial data introduces challenges not present in standard single-cell analysis: each measurement reflects a mixture of cells at a fixed position, and deciding what signal to keep versus filter out is a central part of the analysis. This workshop aims to demonstrate the effective utilization of 10x Genomics Visium data through hands-on analysis of embryonic heart sections. Participants will work step by step through loading, filtering, processing, and clustering spatial transcriptomics data in R using the semla and Seurat packages, first on a single tissue section and then across three sections spanning different developmental ages, drawing on data from a published atlas of the developing human heart.\nBy the end of this workshop, participants will be familiar with loading and visualizing Visium data, will have filtered and clustered spots into biologically meaningful groups and mapped them onto tissue anatomy, and will know how to identify cluster-defining genes, correct for batch effects across multiple sections, and explore how gene expression changes across developmental stages.\n\nSlides\n\n\n\nWalkthrough",
     "crumbs": [
-      "Introduction"
+      "Sessions",
+      "Visium"
     ]
   },
   {
@@ -50,36 +52,78 @@
     ]
   },
   {
-    "objectID": "visium.html",
-    "href": "visium.html",
-    "title": "Visium spatial transcriptomics (heart sections)",
-    "section": "",
-    "text": "Training materials for the 2026 V4SDB Student Summer School\nInstructor:\nRaphaël Mauron (KTH Royal Institute of Technology, Stockholm)\nraphael.mauron@scilifelab.se",
+    "objectID": "index.html#confirmed-lecturers",
+    "href": "index.html#confirmed-lecturers",
+    "title": "2026 V4SDB Student Summer School Information",
+    "section": "Confirmed lecturers",
+    "text": "Confirmed lecturers\n\nEnikő Lázár - KTH Royal Institute of Technology\nYinan Wan - Biozentrum, University of Basel\nJonathan Enriques - Institut de Génomique Fonctionnelle de Lyon\nKonstantin Khodosevich - BRIC University of Copenhagen\n\nOrganizer:\n\nMáté Varga - ELTE Eötvös Loránd University, Budapest, Hungary",
     "crumbs": [
-      "Sessions",
-      "Visium"
+      "Introduction"
     ]
   },
   {
-    "objectID": "visium.html#visium-spatial-transcriptomics-heart-sections",
-    "href": "visium.html#visium-spatial-transcriptomics-heart-sections",
-    "title": "2026 V4SDB Student Winter School",
-    "section": "",
-    "text": "Slides\nStep-by-step walkthrough",
+    "objectID": "index.html#funding",
+    "href": "index.html#funding",
+    "title": "2026 V4SDB Student Summer School Information",
+    "section": "Funding",
+    "text": "Funding",
     "crumbs": [
-      "Sessions",
-      "Visium"
+      "Introduction"
     ]
   },
   {
-    "objectID": "visium.html#workshop-overview",
-    "href": "visium.html#workshop-overview",
-    "title": "Visium spatial transcriptomics (heart sections)",
+    "objectID": "v4sdb-DBiT-seq.html",
+    "href": "v4sdb-DBiT-seq.html",
+    "title": "Mapping Biology in Space — DBiT-seq and the Basics of Spatial Multi-Omics Analysis",
+    "section": "",
+    "text": "Training materials for the 2026 V4SDB Student Summer School\nInstructor:\nShuozhen Bao (KTH Royal Institute of Technology, Stockholm)\nshuozhen.bao@scilifelab.se",
+    "crumbs": [
+      "Sessions",
+      "DBiT-seq"
+    ]
+  },
+  {
+    "objectID": "v4sdb-DBiT-seq.html#workshop-overview",
+    "href": "v4sdb-DBiT-seq.html#workshop-overview",
+    "title": "Mapping Biology in Space — DBiT-seq and the Basics of Spatial Multi-Omics Analysis",
     "section": "Workshop Overview",
-    "text": "Workshop Overview\nIn developmental biology, spatial transcriptomics allows researchers to measure gene expression while preserving the tissue’s spatial organization, revealing how cell types and gene programs are arranged across an organ as it forms. However, working with spatial data introduces challenges not present in standard single-cell analysis: each measurement reflects a mixture of cells at a fixed position, and deciding what signal to keep versus filter out is a central part of the analysis. This workshop aims to demonstrate the effective utilization of 10x Genomics Visium data through hands-on analysis of embryonic heart sections. Participants will work step by step through loading, filtering, processing, and clustering spatial transcriptomics data in R using the semla and Seurat packages, first on a single tissue section and then across three sections spanning different developmental ages, drawing on data from a published atlas of the developing human heart.\nBy the end of this workshop, participants will be familiar with loading and visualizing Visium data, will have filtered and clustered spots into biologically meaningful groups and mapped them onto tissue anatomy, and will know how to identify cluster-defining genes, correct for batch effects across multiple sections, and explore how gene expression changes across developmental stages.\n\nSlides\n\n\n\nWalkthrough",
+    "text": "Workshop Overview\nSequencing tells you what molecules are present in a sample; it rarely tells you where. Bulk sequencing averages an entire tissue into one profile, and single-cell sequencing resolves individual cells only by dissociating the tissue and destroying their spatial context. Spatial multi-omics closes that gap: it keeps each molecular readout pinned to its original (x, y) position in the tissue.\nThis session introduces spatial multi-omics analysis through DBiT-seq (Deterministic Barcoding in Tissue), a microfluidic method that stamps a barcode grid directly onto a tissue section. Two perpendicular sets of channels tag every pixel with a unique barcode combination, so RNA, chromatin accessibility (ATAC), and protein (via antibody-derived tags) can all be measured on the same pixels of the same section — three molecular layers, one spatial grid.\nParticipants work hands-on in a browser-based notebook (no installation required) with a real published dataset: a P21 mouse brain profiled by spatial ARP-seq (ATAC + RNA + Protein) from Zhang et al., Nature 647, 213–227 (2025). No programming background is assumed — most cells are pre-written and simply run and read; a handful of “Your turn” cells invite participants to change one value and observe the effect.",
     "crumbs": [
       "Sessions",
-      "Visium"
+      "DBiT-seq"
+    ]
+  },
+  {
+    "objectID": "v4sdb-DBiT-seq.html#what-the-session-covers",
+    "href": "v4sdb-DBiT-seq.html#what-the-session-covers",
+    "title": "Mapping Biology in Space — DBiT-seq and the Basics of Spatial Multi-Omics Analysis",
+    "section": "What the session covers",
+    "text": "What the session covers\n\nWhy spatial multi-omics — how it differs from bulk and single-cell sequencing, and where DBiT-seq sits relative to other platforms (e.g., Visium HD, spatial ATAC-seq).\nReading the figures — how to interpret the chart types common to omics papers: bar plots, heatmaps, dot plots, and GO/KEGG enrichment as bubble plots or networks.\nThe tissue and the study — mouse cortical anatomy at postnatal day 21 (layered neurons, the myelinating corpus callosum) and what the source paper found: cortical layers sharpen and the corpus callosum myelinates over development, with chromatin accessibility changes preceding transcriptional changes at the same loci.\nHands-on analysis — loading and aligning the three molecular tables to a shared pixel grid, checking tissue orientation, visualizing RNA/ATAC/protein signal for the same gene, handling sparse ATAC signal by aggregating gene programmes, and normalizing each modality.\nValidation — plotting a panel of known cortical-layer marker genes (Cux2, Rasgrf2, Rorb, Bcl11b, Foxp2, Tle4, Mbp, Plp1) and checking that they land in the expected anatomical layers, as the criterion for trusting the rest of the analysis.",
+    "crumbs": [
+      "Sessions",
+      "DBiT-seq"
+    ]
+  },
+  {
+    "objectID": "v4sdb-DBiT-seq.html#learning-objectives",
+    "href": "v4sdb-DBiT-seq.html#learning-objectives",
+    "title": "Mapping Biology in Space — DBiT-seq and the Basics of Spatial Multi-Omics Analysis",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nBy the end of the session, participants should be able to:\n\nExplain what spatial multi-omics adds over bulk and single-cell sequencing.\nDescribe how DBiT-seq co-registers RNA, ATAC, and protein measurements to the same tissue pixels.\nRead and interpret the standard chart types used to report omics results.\nLoad, align, and visualize multi-modal spatial data in a shared coordinate system.\nUse known anatomical markers to validate that a spatial dataset is correctly oriented and biologically sound before drawing further conclusions.",
+    "crumbs": [
+      "Sessions",
+      "DBiT-seq"
+    ]
+  },
+  {
+    "objectID": "v4sdb-DBiT-seq.html#format",
+    "href": "v4sdb-DBiT-seq.html#format",
+    "title": "Mapping Biology in Space — DBiT-seq and the Basics of Spatial Multi-Omics Analysis",
+    "section": "Format",
+    "text": "Format\nSelf-paced, browser-based (Google Colab), roughly following five blocks: environment setup, why spatial multi-omics, reading the figures, the tissue and the study, and hands-on analysis with validation. Demonstrators are available throughout for troubleshooting.\n\nSlides\n\nJupyter notebook: Download it from here\nDataset: Zhang, D. et al. (2025). Spatial dynamics of brain development and neuroinflammation. Nature 647, 213–227. doi:10.1038/s41586-025-09663-y — RNA: GEO GSE308526 · ATAC: GEO GSE308599 · Protein: NeMO Archive.",
+    "crumbs": [
+      "Sessions",
+      "DBiT-seq"
     ]
   }
 ]
