@@ -1,74 +1,24 @@
 [
   {
-    "objectID": "visium.html",
-    "href": "visium.html",
-    "title": "Visium spatial transcriptomics (heart sections)",
+    "objectID": "xenium.html",
+    "href": "xenium.html",
+    "title": "Case–control Xenium: from cells to biology",
     "section": "",
-    "text": "Training materials for the 2026 V4SDB Student Summer School\nInstructor:\nRaphaël Mauron (KTH Royal Institute of Technology, Stockholm)\nraphael.mauron@scilifelab.se",
+    "text": "Training materials for the 2026 V4SDB Student Summer School\nInstructor:\nKatarina Dragicevic (BRIC University of Copenhagen)\nkatarina.dragicevic@bric.ku.dk",
     "crumbs": [
       "Sessions",
-      "Visium"
+      "Xenium"
     ]
   },
   {
-    "objectID": "visium.html#workshop-overview",
-    "href": "visium.html#workshop-overview",
-    "title": "Visium spatial transcriptomics (heart sections)",
+    "objectID": "xenium.html#workshop-overview",
+    "href": "xenium.html#workshop-overview",
+    "title": "Case–control Xenium: from cells to biology",
     "section": "Workshop Overview",
-    "text": "Workshop Overview\nIn developmental biology, spatial transcriptomics allows researchers to measure gene expression while preserving the tissue’s spatial organization, revealing how cell types and gene programs are arranged across an organ as it forms. However, working with spatial data introduces challenges not present in standard single-cell analysis: each measurement reflects a mixture of cells at a fixed position, and deciding what signal to keep versus filter out is a central part of the analysis. This workshop aims to demonstrate the effective utilization of 10x Genomics Visium data through hands-on analysis of embryonic heart sections. Participants will work step by step through loading, filtering, processing, and clustering spatial transcriptomics data in R using the semla and Seurat packages, first on a single tissue section and then across three sections spanning different developmental ages, drawing on data from a published atlas of the developing human heart.\nBy the end of this workshop, participants will be familiar with loading and visualizing Visium data, will have filtered and clustered spots into biologically meaningful groups and mapped them onto tissue anatomy, and will know how to identify cluster-defining genes, correct for batch effects across multiple sections, and explore how gene expression changes across developmental stages.\n\nSlides\n\n\n\nWalkthrough",
+    "text": "Workshop Overview\nXenium spatial transcriptomics measures targeted gene expression at single-cell resolution while preserving the physical organization of the tissue. This makes it possible to study which cell populations are present, what genes they express, and where they are located. In case–control human brain data, however, the challenge is not simply to generate clusters: cell identities must be supported by marker genes and reference data, and disease comparisons must respect the donor as the biological replicate.\nIn this workshop, participants will analyze Xenium data from the human dorsolateral prefrontal cortex, comparing schizophrenia and neurotypical control donors. Working in R and Google Colab with Seurat, participants will start from a prepared object after quality control, normalization, and scaling. They will move step by step through dimensionality reduction, clustering, marker-based cell-type annotation, comparison with a published human DLPFC single-nucleus reference, visualization of annotated cells in tissue space, donor-level cell-type composition, and cell-type-specific pseudobulk differential expression.\nBy the end of the workshop, participants will be able to explore a single-cell spatial object, cluster cells and interpret a UMAP, annotate broad brain cell types using multiple sources of evidence, map annotations back into tissue space, compare cell-type proportions between groups, and perform donor-aware differential expression. Throughout the analysis, emphasis is placed on avoiding pseudoreplication, recognizing the limitations of a targeted 300-gene panel, and separating exploratory teaching results from publication-level biological conclusions.\n\nNotebook\nClick here to access the notebook.",
     "crumbs": [
       "Sessions",
-      "Visium"
-    ]
-  },
-  {
-    "objectID": "programme.html",
-    "href": "programme.html",
-    "title": "2026 V4SDB Student Summer School Programme",
-    "section": "",
-    "text": "Time\nActivity\n\n\n\n\n13:00-14:00\nRegistration\n\n\n14:00-15:30\n“Spatial Biology: Towards Decoding Tissue Architecture in Development, Health and Disease” Public Lecture by Enikő Lázár (KTH Royal Institute of Technology) Room 0-821 (Bolyai János terem)\n\n\n16:00-18:00\nStudent Flash Talks Room 7-424 (Bioinformatics Lab)\n\n\n20:00-23:00\nSocial Program (at The Grund)\n\n\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n09:00-13:00\nKTH Practical Block No. 1 — Raphaël Mauron\n\n\n13:00-14:00\nLunch\n\n\n14:00-15:00\n“Use of Visium/Xenium spatial transcriptomics to understand mechanisms of brain disorders” Konstantin Khodosevich (BRIC, University of Copenhagen) — online\n\n\n15:00-18:00\nBRIC Practical Block — Katarina Dragicevic\n\n\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n09:00-09:40\nBruker Hive Presentation\n\n\n09:40-10:00\nBreak\n\n\n10:00-13:00\nKTH Practical Block No. 2 — Sergio Marco Salas\n\n\n13:00-14:00\nLunch\n\n\n14:00-14:40\n10x Genomics/Genetica PresentationCarta Genum: Making Spatial Data Analysis Accessible to Every ResearcherIvana Dobiášovská (Genetica Group)\n\n\n14:40-15:00\nBreak\n\n\n15:00-18:00\nKTH Practical Block No. 3 — Shouzhen Bao\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n09:00-12:00\nTalks on MERFISH: “Image-Based Spatial Transcriptomics with smFISH: From Probe Design to Image Analysis” — Jonathan Enriquez (Institut de Génomique Fonctionnelle de Lyon) — in person “Whole-embryo spatiotemporal transcriptomics at subcellular resolution” — Yinan Wan (University of Basel) — online\n\n\n12:00-14:00\nMERFISH Practical\n\n\n\n\n\n\n\n\n\nProgramme notes\n\n\n\n\nExcept for the opening lecture (delivered in room 0-821), all the classes of the workshop will take place in the Bioinformatics Lab of the Biology Institute, room 7-424\nAll sessions include breaks to maintain engagement and provide networking opportunities\nThe Bruker Hive and 10x Genomics/Genetica sponsor presentations are scheduled for 40 minutes each (Thursday 09:00-09:40 and 14:00-14:40); the remaining 20 minutes of each hour are kept as a short break\nKonstantin Khodosevich’s session (Wednesday) and Yinan Wan’s talk (Friday) will be delivered online",
-    "crumbs": [
-      "Programme"
-    ]
-  },
-  {
-    "objectID": "programme.html#preliminary-programme",
-    "href": "programme.html#preliminary-programme",
-    "title": "2026 V4SDB Student Summer School Programme",
-    "section": "",
-    "text": "Time\nActivity\n\n\n\n\n13:00-14:00\nRegistration\n\n\n14:00-15:30\n“Spatial Biology: Towards Decoding Tissue Architecture in Development, Health and Disease” Public Lecture by Enikő Lázár (KTH Royal Institute of Technology) Room 0-821 (Bolyai János terem)\n\n\n16:00-18:00\nStudent Flash Talks Room 7-424 (Bioinformatics Lab)\n\n\n20:00-23:00\nSocial Program (at The Grund)\n\n\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n09:00-13:00\nKTH Practical Block No. 1 — Raphaël Mauron\n\n\n13:00-14:00\nLunch\n\n\n14:00-15:00\n“Use of Visium/Xenium spatial transcriptomics to understand mechanisms of brain disorders” Konstantin Khodosevich (BRIC, University of Copenhagen) — online\n\n\n15:00-18:00\nBRIC Practical Block — Katarina Dragicevic\n\n\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n09:00-09:40\nBruker Hive Presentation\n\n\n09:40-10:00\nBreak\n\n\n10:00-13:00\nKTH Practical Block No. 2 — Sergio Marco Salas\n\n\n13:00-14:00\nLunch\n\n\n14:00-14:40\n10x Genomics/Genetica PresentationCarta Genum: Making Spatial Data Analysis Accessible to Every ResearcherIvana Dobiášovská (Genetica Group)\n\n\n14:40-15:00\nBreak\n\n\n15:00-18:00\nKTH Practical Block No. 3 — Shouzhen Bao\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n09:00-12:00\nTalks on MERFISH: “Image-Based Spatial Transcriptomics with smFISH: From Probe Design to Image Analysis” — Jonathan Enriquez (Institut de Génomique Fonctionnelle de Lyon) — in person “Whole-embryo spatiotemporal transcriptomics at subcellular resolution” — Yinan Wan (University of Basel) — online\n\n\n12:00-14:00\nMERFISH Practical\n\n\n\n\n\n\n\n\n\nProgramme notes\n\n\n\n\nExcept for the opening lecture (delivered in room 0-821), all the classes of the workshop will take place in the Bioinformatics Lab of the Biology Institute, room 7-424\nAll sessions include breaks to maintain engagement and provide networking opportunities\nThe Bruker Hive and 10x Genomics/Genetica sponsor presentations are scheduled for 40 minutes each (Thursday 09:00-09:40 and 14:00-14:40); the remaining 20 minutes of each hour are kept as a short break\nKonstantin Khodosevich’s session (Wednesday) and Yinan Wan’s talk (Friday) will be delivered online",
-    "crumbs": [
-      "Programme"
-    ]
-  },
-  {
-    "objectID": "programme.html#location",
-    "href": "programme.html#location",
-    "title": "2026 V4SDB Student Summer School Programme",
-    "section": "Location",
-    "text": "Location\nThe Summer School will take place on the premises of the Faculty of Science of ELTE Eötvös Loránd University - Pázmány Péter stny. 1/C, 1117 Budapest.",
-    "crumbs": [
-      "Programme"
-    ]
-  },
-  {
-    "objectID": "index.html#confirmed-lecturers",
-    "href": "index.html#confirmed-lecturers",
-    "title": "2026 V4SDB Student Summer School Information",
-    "section": "Confirmed lecturers",
-    "text": "Confirmed lecturers\n\nEnikő Lázár - KTH Royal Institute of Technology\nYinan Wan - Biozentrum, University of Basel\nJonathan Enriques - Institut de Génomique Fonctionnelle de Lyon\nKonstantin Khodosevich - BRIC University of Copenhagen\n\nOrganizer:\n\nMáté Varga - ELTE Eötvös Loránd University, Budapest, Hungary",
-    "crumbs": [
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "index.html#funding",
-    "href": "index.html#funding",
-    "title": "2026 V4SDB Student Summer School Information",
-    "section": "Funding",
-    "text": "Funding",
-    "crumbs": [
-      "Introduction"
+      "Xenium"
     ]
   },
   {
@@ -124,6 +74,78 @@
     "crumbs": [
       "Sessions",
       "DBiT-seq"
+    ]
+  },
+  {
+    "objectID": "index.html#confirmed-lecturers",
+    "href": "index.html#confirmed-lecturers",
+    "title": "2026 V4SDB Student Summer School Information",
+    "section": "Confirmed lecturers",
+    "text": "Confirmed lecturers\n\nEnikő Lázár - KTH Royal Institute of Technology\nYinan Wan - Biozentrum, University of Basel\nJonathan Enriques - Institut de Génomique Fonctionnelle de Lyon\nKonstantin Khodosevich - BRIC University of Copenhagen\n\nOrganizer:\n\nMáté Varga - ELTE Eötvös Loránd University, Budapest, Hungary",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#funding",
+    "href": "index.html#funding",
+    "title": "2026 V4SDB Student Summer School Information",
+    "section": "Funding",
+    "text": "Funding",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "programme.html",
+    "href": "programme.html",
+    "title": "2026 V4SDB Student Summer School Programme",
+    "section": "",
+    "text": "Time\nActivity\n\n\n\n\n13:00-14:00\nRegistration\n\n\n14:00-15:30\n“Spatial Biology: Towards Decoding Tissue Architecture in Development, Health and Disease” Public Lecture by Enikő Lázár (KTH Royal Institute of Technology) Room 0-821 (Bolyai János terem)\n\n\n16:00-17:00\nStudent Flash Talks Room 7-424 (Bioinformatics Lab)\n\n\n17:00-17:30\nBruker Hive Presentation\n\n\n20:00-23:00\nSocial Program (at The Grund)\n\n\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n09:00-13:00\nKTH Practical Block No. 1 — Raphaël Mauron\n\n\n13:00-14:00\nLunch\n\n\n14:00-15:00\n“Use of Visium/Xenium spatial transcriptomics to understand mechanisms of brain disorders” Konstantin Khodosevich (BRIC, University of Copenhagen) — online\n\n\n15:00-18:00\nBRIC Practical Block — Katarina Dragicevic\n\n\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n09:30-13:00\nKTH Practical Block No. 2 — Sergio Marco Salas\n\n\n13:00-14:00\nLunch\n\n\n14:00-14:40\n10x Genomics/Genetica PresentationCarta Genum: Making Spatial Data Analysis Accessible to Every ResearcherIvana Dobiášovská (Genetica Group)\n\n\n14:40-15:00\nBreak\n\n\n15:00-18:00\nKTH Practical Block No. 3 — Shouzhen Bao\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n09:00-12:00\nTalks on MERFISH: “Image-Based Spatial Transcriptomics with smFISH: From Probe Design to Image Analysis” — Jonathan Enriquez (Institut de Génomique Fonctionnelle de Lyon) — in person “Whole-embryo spatiotemporal transcriptomics at subcellular resolution” — Yinan Wan (University of Basel) — online\n\n\n12:00-14:00\nMERFISH Practical\n\n\n\n\n\n\n\n\n\nProgramme notes\n\n\n\n\nExcept for the opening lecture (delivered in room 0-821), all the classes of the workshop will take place in the Bioinformatics Lab of the Biology Institute, room 7-424\nAll sessions include breaks to maintain engagement and provide networking opportunities\nThe Bruker Hive and 10x Genomics/Genetica sponsor presentations are scheduled for 40 minutes each (Thursday 09:00-09:40 and 14:00-14:40); the remaining 20 minutes of each hour are kept as a short break\nKonstantin Khodosevich’s session (Wednesday) and Yinan Wan’s talk (Friday) will be delivered online",
+    "crumbs": [
+      "Programme"
+    ]
+  },
+  {
+    "objectID": "programme.html#preliminary-programme",
+    "href": "programme.html#preliminary-programme",
+    "title": "2026 V4SDB Student Summer School Programme",
+    "section": "",
+    "text": "Time\nActivity\n\n\n\n\n13:00-14:00\nRegistration\n\n\n14:00-15:30\n“Spatial Biology: Towards Decoding Tissue Architecture in Development, Health and Disease” Public Lecture by Enikő Lázár (KTH Royal Institute of Technology) Room 0-821 (Bolyai János terem)\n\n\n16:00-17:00\nStudent Flash Talks Room 7-424 (Bioinformatics Lab)\n\n\n17:00-17:30\nBruker Hive Presentation\n\n\n20:00-23:00\nSocial Program (at The Grund)\n\n\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n09:00-13:00\nKTH Practical Block No. 1 — Raphaël Mauron\n\n\n13:00-14:00\nLunch\n\n\n14:00-15:00\n“Use of Visium/Xenium spatial transcriptomics to understand mechanisms of brain disorders” Konstantin Khodosevich (BRIC, University of Copenhagen) — online\n\n\n15:00-18:00\nBRIC Practical Block — Katarina Dragicevic\n\n\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n09:30-13:00\nKTH Practical Block No. 2 — Sergio Marco Salas\n\n\n13:00-14:00\nLunch\n\n\n14:00-14:40\n10x Genomics/Genetica PresentationCarta Genum: Making Spatial Data Analysis Accessible to Every ResearcherIvana Dobiášovská (Genetica Group)\n\n\n14:40-15:00\nBreak\n\n\n15:00-18:00\nKTH Practical Block No. 3 — Shouzhen Bao\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n09:00-12:00\nTalks on MERFISH: “Image-Based Spatial Transcriptomics with smFISH: From Probe Design to Image Analysis” — Jonathan Enriquez (Institut de Génomique Fonctionnelle de Lyon) — in person “Whole-embryo spatiotemporal transcriptomics at subcellular resolution” — Yinan Wan (University of Basel) — online\n\n\n12:00-14:00\nMERFISH Practical\n\n\n\n\n\n\n\n\n\nProgramme notes\n\n\n\n\nExcept for the opening lecture (delivered in room 0-821), all the classes of the workshop will take place in the Bioinformatics Lab of the Biology Institute, room 7-424\nAll sessions include breaks to maintain engagement and provide networking opportunities\nThe Bruker Hive and 10x Genomics/Genetica sponsor presentations are scheduled for 40 minutes each (Thursday 09:00-09:40 and 14:00-14:40); the remaining 20 minutes of each hour are kept as a short break\nKonstantin Khodosevich’s session (Wednesday) and Yinan Wan’s talk (Friday) will be delivered online",
+    "crumbs": [
+      "Programme"
+    ]
+  },
+  {
+    "objectID": "programme.html#location",
+    "href": "programme.html#location",
+    "title": "2026 V4SDB Student Summer School Programme",
+    "section": "Location",
+    "text": "Location\nThe Summer School will take place on the premises of the Faculty of Science of ELTE Eötvös Loránd University - Pázmány Péter stny. 1/C, 1117 Budapest.",
+    "crumbs": [
+      "Programme"
+    ]
+  },
+  {
+    "objectID": "visium.html",
+    "href": "visium.html",
+    "title": "Visium spatial transcriptomics (heart sections)",
+    "section": "",
+    "text": "Training materials for the 2026 V4SDB Student Summer School\nInstructor:\nRaphaël Mauron (KTH Royal Institute of Technology, Stockholm)\nraphael.mauron@scilifelab.se",
+    "crumbs": [
+      "Sessions",
+      "Visium"
+    ]
+  },
+  {
+    "objectID": "visium.html#workshop-overview",
+    "href": "visium.html#workshop-overview",
+    "title": "Visium spatial transcriptomics (heart sections)",
+    "section": "Workshop Overview",
+    "text": "Workshop Overview\nIn developmental biology, spatial transcriptomics allows researchers to measure gene expression while preserving the tissue’s spatial organization, revealing how cell types and gene programs are arranged across an organ as it forms. However, working with spatial data introduces challenges not present in standard single-cell analysis: each measurement reflects a mixture of cells at a fixed position, and deciding what signal to keep versus filter out is a central part of the analysis. This workshop aims to demonstrate the effective utilization of 10x Genomics Visium data through hands-on analysis of embryonic heart sections. Participants will work step by step through loading, filtering, processing, and clustering spatial transcriptomics data in R using the semla and Seurat packages, first on a single tissue section and then across three sections spanning different developmental ages, drawing on data from a published atlas of the developing human heart.\nBy the end of this workshop, participants will be familiar with loading and visualizing Visium data, will have filtered and clustered spots into biologically meaningful groups and mapped them onto tissue anatomy, and will know how to identify cluster-defining genes, correct for batch effects across multiple sections, and explore how gene expression changes across developmental stages.\n\nSlides\n\n\n\nWalkthrough",
+    "crumbs": [
+      "Sessions",
+      "Visium"
     ]
   }
 ]
