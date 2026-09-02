@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Visium spatial transcriptomics (heart sections) – 2026 V4SDB Student Winter School</title>
+<title>Image-Based Spatial Transcriptomics: From Segmentation to Domains – 2026 V4SDB Student Winter School</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./visium.html">Sessions</a></li><li class="breadcrumb-item"><a href="./visium.html">Visium</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./visium.html">Sessions</a></li><li class="breadcrumb-item"><a href="./iST_intro.html">Xenium II.</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./visium.html" class="sidebar-item-text sidebar-link active">
+  <a href="./visium.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visium</span></a>
   </div>
 </li>
@@ -142,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./iST_intro.html" class="sidebar-item-text sidebar-link">
+  <a href="./iST_intro.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Xenium II.</span></a>
   </div>
 </li>
@@ -166,8 +166,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#workshop-overview" id="toc-workshop-overview" class="nav-link active" data-scroll-target="#workshop-overview">Workshop Overview</a>
   <ul class="collapse">
+  <li><a href="#notebook" id="toc-notebook" class="nav-link" data-scroll-target="#notebook">Notebook</a></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
-  <li><a href="#walkthrough" id="toc-walkthrough" class="nav-link" data-scroll-target="#walkthrough">Walkthrough</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -175,9 +175,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./visium.html">Sessions</a></li><li class="breadcrumb-item"><a href="./visium.html">Visium</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./visium.html">Sessions</a></li><li class="breadcrumb-item"><a href="./iST_intro.html">Xenium II.</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Visium spatial transcriptomics (heart sections)</h1>
+<h1 class="title">Image-Based Spatial Transcriptomics: From Segmentation to Domains</h1>
 </div>
 
 
@@ -196,19 +196,28 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Training materials for the 2026 V4SDB Student Summer School</p>
 <p><strong>Instructor:</strong></p>
-<p>Raphaël Mauron (KTH Royal Institute of Technology, Stockholm)<br>
-raphael.mauron@scilifelab.se</p>
+<p>Sergio Marco Salas (KTH Royal Institute of Technology, Stockholm)<br>
+sergiomarco.salas@scilifelab.se</p>
 <section id="workshop-overview" class="level2">
 <h2 class="anchored" data-anchor-id="workshop-overview">Workshop Overview</h2>
-<p>In developmental biology, spatial transcriptomics allows researchers to measure gene expression while preserving the tissue’s spatial organization, revealing how cell types and gene programs are arranged across an organ as it forms. However, working with spatial data introduces challenges not present in standard single-cell analysis: each measurement reflects a mixture of cells at a fixed position, and deciding what signal to keep versus filter out is a central part of the analysis. This workshop aims to demonstrate the effective utilization of <code>10x Genomics Visium</code> data through hands-on analysis of embryonic heart sections. Participants will work step by step through loading, filtering, processing, and clustering spatial transcriptomics data in <code>R</code> using the <code>semla</code> and <code>Seurat</code> packages, first on a single tissue section and then across three sections spanning different developmental ages, drawing on data from a published atlas of the developing human heart.</p>
-<p>By the end of this workshop, participants will be familiar with loading and visualizing Visium data, will have filtered and clustered spots into biologically meaningful groups and mapped them onto tissue anatomy, and will know how to identify cluster-defining genes, correct for batch effects across multiple sections, and explore how gene expression changes across developmental stages.</p>
+<p>Building on the foundational workshop on image-based spatial transcriptomics by Katarina Dragicevic and Dorottya Ralbovszki, this session deepens hands-on experience using Xenium samples from the human dorsal striatum. While standard transcriptomic analysis focuses primarily on cell-type identification, capturing true tissue architecture requires integrating physical coordinates, cell morphology, and localized microenvironments.</p>
+<p>Working in Python within the <code>scverse</code> ecosystem (utilizing libraries such as Scanpy, Squidpy, and SpatialData), participants will explore complementary spatial workflows. The hands-on pipeline moves step-by-step through evaluating and refining cell segmentation, performing spatial domain identification (niche clustering), and calculating spatial statistics to quantify cell–cell co-localization, spatial autocorrelation, and neighborhood enrichment patterns within the striatal tissue.</p>
+<p>By the end of the workshop, participants will be able to:</p>
+<ul>
+<li>Navigate and manipulate spatial transcriptomics objects natively in Python.</li>
+<li>Critically evaluate image-based cell segmentation boundaries and transcript assignment.</li>
+<li>Identify and visualize distinct spatial domains and tissue microenvironments.</li>
+<li>Calculate quantitative spatial statistics to test hypotheses about cellular distribution.</li>
+</ul>
+<p>Throughout the session, emphasis is placed on understanding the computational assumptions behind cell segmentation algorithms, choosing appropriate spatial neighborhood graphs, and applying best practices in Python for downstream spatial data interpretation.</p>
+<section id="notebook" class="level3">
+<h3 class="anchored" data-anchor-id="notebook">Notebook</h3>
+<p>Click <a href="https://colab.research.google.com/github/sergiomarco25/v4sdb-spatial-budapest/blob/main/notebooks/01_tissue_architecture_session.ipynb#scrollTo=QJwy8oQRH6AS">here</a> to access the notebook.</p>
+</section>
 <section id="slides" class="level3">
 <h3 class="anchored" data-anchor-id="slides">Slides</h3>
-<iframe src="sessions/visium-heart-slides.html" width="100%" height="900" style="border:none;"></iframe>
-</section>
-<section id="walkthrough" class="level3">
-<h3 class="anchored" data-anchor-id="walkthrough">Walkthrough</h3>
-<iframe src="sessions/visium-heart-walkthrough.html" width="100%" height="900" style="border:none;"></iframe>
+<iframe src="sessions/iST_slides.html" width="100%" height="600" style="border:1px solid #ddd; border-radius:8px;" allowfullscreen="" loading="lazy">
+</iframe>
 
 
 </section>

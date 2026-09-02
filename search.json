@@ -97,6 +97,28 @@
     ]
   },
   {
+    "objectID": "iST_intro.html",
+    "href": "iST_intro.html",
+    "title": "Image-Based Spatial Transcriptomics: From Segmentation to Domains",
+    "section": "",
+    "text": "Training materials for the 2026 V4SDB Student Summer School\nInstructor:\nSergio Marco Salas (KTH Royal Institute of Technology, Stockholm)\nsergiomarco.salas@scilifelab.se",
+    "crumbs": [
+      "Sessions",
+      "Xenium II."
+    ]
+  },
+  {
+    "objectID": "iST_intro.html#workshop-overview",
+    "href": "iST_intro.html#workshop-overview",
+    "title": "Image-Based Spatial Transcriptomics: From Segmentation to Domains",
+    "section": "Workshop Overview",
+    "text": "Workshop Overview\nBuilding on the foundational workshop on image-based spatial transcriptomics by Katarina Dragicevic and Dorottya Ralbovszki, this session deepens hands-on experience using Xenium samples from the human dorsal striatum. While standard transcriptomic analysis focuses primarily on cell-type identification, capturing true tissue architecture requires integrating physical coordinates, cell morphology, and localized microenvironments.\nWorking in Python within the scverse ecosystem (utilizing libraries such as Scanpy, Squidpy, and SpatialData), participants will explore complementary spatial workflows. The hands-on pipeline moves step-by-step through evaluating and refining cell segmentation, performing spatial domain identification (niche clustering), and calculating spatial statistics to quantify cell–cell co-localization, spatial autocorrelation, and neighborhood enrichment patterns within the striatal tissue.\nBy the end of the workshop, participants will be able to:\n\nNavigate and manipulate spatial transcriptomics objects natively in Python.\nCritically evaluate image-based cell segmentation boundaries and transcript assignment.\nIdentify and visualize distinct spatial domains and tissue microenvironments.\nCalculate quantitative spatial statistics to test hypotheses about cellular distribution.\n\nThroughout the session, emphasis is placed on understanding the computational assumptions behind cell segmentation algorithms, choosing appropriate spatial neighborhood graphs, and applying best practices in Python for downstream spatial data interpretation.\n\nNotebook\nClick here to access the notebook.\n\n\nSlides",
+    "crumbs": [
+      "Sessions",
+      "Xenium II."
+    ]
+  },
+  {
     "objectID": "programme.html",
     "href": "programme.html",
     "title": "2026 V4SDB Student Summer School Programme",
