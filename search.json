@@ -77,23 +77,23 @@
     ]
   },
   {
-    "objectID": "index.html#confirmed-lecturers",
-    "href": "index.html#confirmed-lecturers",
-    "title": "2026 V4SDB Student Summer School Information",
-    "section": "Confirmed lecturers",
-    "text": "Confirmed lecturers\n\nEnikő Lázár - KTH Royal Institute of Technology\nYinan Wan - Biozentrum, University of Basel\nJonathan Enriques - Institut de Génomique Fonctionnelle de Lyon\nKonstantin Khodosevich - BRIC University of Copenhagen\n\nOrganizer:\n\nMáté Varga - ELTE Eötvös Loránd University, Budapest, Hungary",
+    "objectID": "lectures.html",
+    "href": "lectures.html",
+    "title": "2026 V4SDB Student Summer School - Lectures",
+    "section": "",
+    "text": "Lecture slides for the 2026 V4SDB Student Summer School",
     "crumbs": [
-      "Introduction"
+      "Lectures"
     ]
   },
   {
-    "objectID": "index.html#funding",
-    "href": "index.html#funding",
-    "title": "2026 V4SDB Student Summer School Information",
-    "section": "Funding",
-    "text": "Funding",
+    "objectID": "lectures.html#merfish-lecture-slides-yinan-wan",
+    "href": "lectures.html#merfish-lecture-slides-yinan-wan",
+    "title": "2026 V4SDB Student Summer School - Lectures",
+    "section": "MERFISH Lecture Slides (Yinan Wan)",
+    "text": "MERFISH Lecture Slides (Yinan Wan)\nYinan Wan (University of Basel)\nyinan.wan@unibas.ch",
     "crumbs": [
-      "Introduction"
+      "Lectures"
     ]
   },
   {
@@ -116,6 +116,26 @@
     "crumbs": [
       "Sessions",
       "Xenium II."
+    ]
+  },
+  {
+    "objectID": "index.html#confirmed-lecturers",
+    "href": "index.html#confirmed-lecturers",
+    "title": "2026 V4SDB Student Summer School Information",
+    "section": "Confirmed lecturers",
+    "text": "Confirmed lecturers\n\nEnikő Lázár - KTH Royal Institute of Technology\nYinan Wan - Biozentrum, University of Basel\nJonathan Enriques - Institut de Génomique Fonctionnelle de Lyon\nKonstantin Khodosevich - BRIC University of Copenhagen\n\nOrganizer:\n\nMáté Varga - ELTE Eötvös Loránd University, Budapest, Hungary",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#funding",
+    "href": "index.html#funding",
+    "title": "2026 V4SDB Student Summer School Information",
+    "section": "Funding",
+    "text": "Funding",
+    "crumbs": [
+      "Introduction"
     ]
   },
   {
