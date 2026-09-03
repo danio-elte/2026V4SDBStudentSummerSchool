@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Image-Based Spatial Transcriptomics: From Segmentation to Domains – 2026 V4SDB Student Winter School</title>
+<title>MERFISH: whole-embryo spatial transcriptomics – 2026 V4SDB Student Winter School</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./visium.html">Sessions</a></li><li class="breadcrumb-item"><a href="./iST_intro.html">Xenium II.</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./visium.html">Sessions</a></li><li class="breadcrumb-item"><a href="./merfish_wkshp.html">MERFISH</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./iST_intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./iST_intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Xenium II.</span></a>
   </div>
 </li>
@@ -160,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./merfish_wkshp.html" class="sidebar-item-text sidebar-link">
+  <a href="./merfish_wkshp.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">MERFISH</span></a>
   </div>
 </li>
@@ -176,20 +176,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#workshop-overview" id="toc-workshop-overview" class="nav-link active" data-scroll-target="#workshop-overview">Workshop Overview</a>
+  <li><a href="#workshop-overview" id="toc-workshop-overview" class="nav-link active" data-scroll-target="#workshop-overview">Workshop Overview</a></li>
+  <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#workshop-step-by-step" id="toc-workshop-step-by-step" class="nav-link" data-scroll-target="#workshop-step-by-step">Workshop step by step</a>
   <ul class="collapse">
-  <li><a href="#notebook" id="toc-notebook" class="nav-link" data-scroll-target="#notebook">Notebook</a></li>
-  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">0. Setup</a></li>
+  <li><a href="#a-quick-tour-of-the-wemerfish-anndata-object" id="toc-a-quick-tour-of-the-wemerfish-anndata-object" class="nav-link" data-scroll-target="#a-quick-tour-of-the-wemerfish-anndata-object">1. A quick tour of the weMERFISH AnnData object</a></li>
+  <li><a href="#qc-and-data-preparation" id="toc-qc-and-data-preparation" class="nav-link" data-scroll-target="#qc-and-data-preparation">2. QC and data preparation</a></li>
+  <li><a href="#plotting-the-embryo-in-space" id="toc-plotting-the-embryo-in-space" class="nav-link" data-scroll-target="#plotting-the-embryo-in-space">3. Plotting the embryo in space</a></li>
+  <li><a href="#gene-expression-in-space" id="toc-gene-expression-in-space" class="nav-link" data-scroll-target="#gene-expression-in-space">4. Gene expression in space</a></li>
+  <li><a href="#clustering-and-spatial-structure" id="toc-clustering-and-spatial-structure" class="nav-link" data-scroll-target="#clustering-and-spatial-structure">5. Clustering and spatial structure</a></li>
+  <li><a href="#comparing-across-stages" id="toc-comparing-across-stages" class="nav-link" data-scroll-target="#comparing-across-stages">6. Comparing across stages</a></li>
   </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./visium.html">Sessions</a></li><li class="breadcrumb-item"><a href="./iST_intro.html">Xenium II.</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./visium.html">Sessions</a></li><li class="breadcrumb-item"><a href="./merfish_wkshp.html">MERFISH</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Image-Based Spatial Transcriptomics: From Segmentation to Domains</h1>
+<h1 class="title">MERFISH: whole-embryo spatial transcriptomics</h1>
 </div>
 
 
@@ -206,33 +215,121 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Training materials for the 2026 V4SDB Student Summer School</p>
-<p><strong>Instructor:</strong></p>
-<p>Sergio Marco Salas (KTH Royal Institute of Technology, Stockholm)<br>
-sergiomarco.salas@scilifelab.se</p>
+<p>Training materials for the 2026 V4SDB Student Summer School on Spatial Transcriptomics</p>
+<p><strong>Instructors:</strong></p>
+<p>Dorottya Ralbovszki (BRIC University of Copenhagen)<br>
+dorottya.ralbovszki@bric.ku.dk</p>
+<p>Virág Tarcsa (ELTE)<br>
+tarcsa.virg@gmail.com</p>
+<hr>
 <section id="workshop-overview" class="level2">
 <h2 class="anchored" data-anchor-id="workshop-overview">Workshop Overview</h2>
-<p>Building on the foundational workshop on image-based spatial transcriptomics by Katarina Dragicevic and Dorottya Ralbovszki, this session deepens hands-on experience using Xenium samples from the human dorsal striatum. While standard transcriptomic analysis focuses primarily on cell-type identification, capturing true tissue architecture requires integrating physical coordinates, cell morphology, and localized microenvironments.</p>
-<p>Working in Python within the <code>scverse</code> ecosystem (utilizing libraries such as Scanpy, Squidpy, and SpatialData), participants will explore complementary spatial workflows. The hands-on pipeline moves step-by-step through evaluating and refining cell segmentation, performing spatial domain identification (niche clustering), and calculating spatial statistics to quantify cell–cell co-localization, spatial autocorrelation, and neighborhood enrichment patterns within the striatal tissue.</p>
-<p>By the end of the workshop, participants will be able to:</p>
+<p>Most spatial transcriptomics methods require thin sections. MERFISH, applied to whole mounts, does not: it resolves individual mRNA molecules in three dimensions inside an intact embryo. In this session we work with <code>weMERFISH</code> data — 495 genes imaged at subcellular resolution in whole zebrafish embryos across gastrulation and early organogenesis — and ask what becomes possible once every cell keeps its address.</p>
+<p>The session is built around a single notebook, run on the local <strong>HIVE server</strong> (installed by Bruker for the Summer School). No personal laptop setup and no prior Python is assumed, though you will get more out of it if you have seen <code>scanpy</code> before.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Run the notebook — on the HIVE server
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>In <code>D:\Students</code>, create a folder with your name or nickname.</li>
+<li>Copy the file <code>2026V4SDBSummerSchool-MERFISH_Archive/01_weMERFISH_basics_YW_updated1</code> into that folder.</li>
+<li>Open the file.</li>
+<li>If VS Code opens it in <strong>Restricted Mode</strong>, click <strong>Manage</strong> → <strong>Trust</strong> the folder.</li>
+<li>Open the <strong>Extensions</strong> panel (left-hand sidebar) and install the <strong>Jupyter</strong> extension.</li>
+<li>Click <strong>Run All</strong>. When prompted to pick a kernel, choose the <strong>V4SDB</strong> Python environment.</li>
+<li>Enjoy the ride.</li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nothing to download
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The two embryo files the notebook needs are already provided on the HIVE server — nothing to download from Dryad, and no internet connection is required during the session.</p>
+</div>
+</div>
+</section>
+<section id="software" class="level2">
+<h2 class="anchored" data-anchor-id="software">Software</h2>
+<p>We use the standard <code>scverse</code> Python stack: <code>scanpy</code>, <code>leidenalg</code>, <code>igraph</code>, <code>requests</code>, <code>plotly</code>, <code>nbformat</code>. On the HIVE server these are already installed in the <strong>V4SDB</strong> Python environment you select when you run the notebook, so the notebook’s own <code>pip install</code> cell should not need to do any real work — it is there mainly for anyone later running the notebook outside the HIVE server.</p>
+<p><a href="https://scanpy.readthedocs.io/"><strong>scanpy</strong></a></p>
 <ul>
-<li>Navigate and manipulate spatial transcriptomics objects natively in Python.</li>
-<li>Critically evaluate image-based cell segmentation boundaries and transcript assignment.</li>
-<li>Identify and visualize distinct spatial domains and tissue microenvironments.</li>
-<li>Calculate quantitative spatial statistics to test hypotheses about cellular distribution.</li>
+<li>The general-purpose single-cell analysis toolkit. The same library you will have used for 10x data — which is exactly the point. Its native <code>sc.pl.spatial()</code> function does most of the plotting here.</li>
 </ul>
-<p>Throughout the session, emphasis is placed on understanding the computational assumptions behind cell segmentation algorithms, choosing appropriate spatial neighborhood graphs, and applying best practices in Python for downstream spatial data interpretation.</p>
-<section id="notebook" class="level3">
-<h3 class="anchored" data-anchor-id="notebook">Notebook</h3>
-<p>Click <a href="https://colab.research.google.com/github/sergiomarco25/v4sdb-spatial-budapest/blob/main/notebooks/01_tissue_architecture_session.ipynb#scrollTo=QJwy8oQRH6AS">here</a> to access the notebook.</p>
+<p><a href="https://anndata.readthedocs.io/"><strong>AnnData</strong></a></p>
+<ul>
+<li>The container format. Cells × genes, plus annotations on both axes and arbitrary matrices attached to each.</li>
+</ul>
+<p><a href="https://squidpy.readthedocs.io/"><strong>squidpy</strong></a></p>
+<ul>
+<li>Spatial extensions to scanpy: neighbourhood enrichment, spatial statistics, image handling. Not required for this session but the natural next step.</li>
+</ul>
+<p><a href="https://plotly.com/python/"><strong>plotly</strong></a></p>
+<ul>
+<li>Used for the interactive 3D embryo view.</li>
+</ul>
 </section>
-<section id="slides" class="level3">
-<h3 class="anchored" data-anchor-id="slides">Slides</h3>
-<iframe src="sessions/iST_slides.html" width="100%" height="600" style="border:1px solid #ddd; border-radius:8px;" allowfullscreen="" loading="lazy">
-</iframe>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>Wan Y, El Kholtei J, Jenie I, <em>et al.</em> (2026) <strong>Whole-embryo spatial transcriptomics at subcellular resolution from gastrulation to organogenesis.</strong> <em>Science.</em> <a href="https://doi.org/10.1126/science.adt3439" class="uri">https://doi.org/10.1126/science.adt3439</a></p>
+<p>The full dataset is deposited at Dryad under <a href="https://datadryad.org/dataset/doi:10.5061/dryad.j0zpc86v9">doi:10.5061/dryad.j0zpc86v9</a> (129 GB, CC0). We only ever need two files from it — the 50% and 75% epiboly embryos — which are provided directly on the HIVE server rather than fetched live from Dryad during the session.</p>
+<p>The atlas can also be browsed interactively at <a href="https://merfisheyes.com">MERFISHEYES</a>, and the analysis code from the paper is at <a href="https://github.com/yinan-wan0/weMERFISH">github.com/yinan-wan0/weMERFISH</a>.</p>
+</section>
+<section id="workshop-step-by-step" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-step-by-step">Workshop step by step</h2>
+<section id="setup" class="level3">
+<h3 class="anchored" data-anchor-id="setup">0. Setup</h3>
+<p>Confirm the packages are available (already true in the <strong>V4SDB</strong> environment on the HIVE server), then point the notebook at the two embryo <code>.h5ad</code> files.</p>
+</section>
+<section id="a-quick-tour-of-the-wemerfish-anndata-object" class="level3">
+<h3 class="anchored" data-anchor-id="a-quick-tour-of-the-wemerfish-anndata-object">1. A quick tour of the weMERFISH AnnData object</h3>
+<p>Reading <code>.h5ad</code> into <code>AnnData</code> and finding your way around it: cell metadata, the gene panel, and — the field that matters most for a whole-mount dataset — the spatial coordinates, which live in <code>.obsm['spatial']</code> for every stage.</p>
+</section>
+<section id="qc-and-data-preparation" class="level3">
+<h3 class="anchored" data-anchor-id="qc-and-data-preparation">2. QC and data preparation</h3>
+<p>The distributed files have already passed the authors’ own QC and filtering, so we don’t re-run a 10x-style filtering pipeline. What we do look at: counts and detected genes per cell, and — the diagnostic unique to spatial data — whether a cluster holds together in physical space, not just in expression space.</p>
+</section>
+<section id="plotting-the-embryo-in-space" class="level3">
+<h3 class="anchored" data-anchor-id="plotting-the-embryo-in-space">3. Plotting the embryo in space</h3>
+<p>The native imaging-space view via <code>sc.pl.spatial()</code>, alongside the precomputed spherical <code>sphere_side</code> / <code>sphere_top</code> views, plus an interactive, rotatable 3D scatter of the whole embryo.</p>
+</section>
+<section id="gene-expression-in-space" class="level3">
+<h3 class="anchored" data-anchor-id="gene-expression-in-space">4. Gene expression in space</h3>
+<p>Mapping individual genes onto the embryo surface. Reading the BMP/Chordin dorsoventral gradient (<code>bmp4</code> vs <code>chrd</code>) directly off the data.</p>
+</section>
+<section id="clustering-and-spatial-structure" class="level3">
+<h3 class="anchored" data-anchor-id="clustering-and-spatial-structure">5. Clustering and spatial structure</h3>
+<p>The familiar PCA–neighbours–Leiden workflow run on the full 495-gene panel. Then the question that only spatial data permits: put clusters computed <em>without any coordinate information</em> back onto the embryo and ask whether they correspond to real tissue domains, alongside a confusion matrix against the authors’ own annotation and a standard marker-gene analysis.</p>
+</section>
+<section id="comparing-across-stages" class="level3">
+<h3 class="anchored" data-anchor-id="comparing-across-stages">6. Comparing across stages</h3>
+<p>Loading the 75% epiboly embryo and comparing one gene — <code>tbxta</code> — between stages, both as spatial maps and as a quantitative profile along the animal–vegetal axis. A prompt to think about the limits of comparing snapshots rather than tracked cells.</p>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p><strong>weMERFISH</strong><br>
+Wan, Y., El Kholtei, J., Jenie, I., Colomer-Rosell, M., Liu, J., Navajas Acedo, J., Du, L. Y., Codina-Tobias, M., Wang, M., Sawh, A., Lin, E., Chuang, T.-H., Mango, S. E., Yu, G., Bintu, B., &amp; Schier, A. F. (2026). <strong>Whole-embryo spatial transcriptomics at subcellular resolution from gastrulation to organogenesis.</strong> <em>Science.</em> <a href="https://doi.org/10.1126/science.adt3439" class="uri">https://doi.org/10.1126/science.adt3439</a></p>
+<p><strong>MERFISH</strong><br>
+Chen, K. H., Boettiger, A. N., Moffitt, J. R., Wang, S., &amp; Zhuang, X. (2015). <strong>Spatially resolved, highly multiplexed RNA profiling in single cells.</strong> <em>Science</em>, 348(6233), aaa6090. <a href="https://doi.org/10.1126/science.aaa6090" class="uri">https://doi.org/10.1126/science.aaa6090</a></p>
+<p><strong>scanpy</strong><br>
+Wolf, F. A., Angerer, P., &amp; Theis, F. J. (2018). <strong>SCANPY: large-scale single-cell gene expression data analysis.</strong> <em>Genome Biology</em>, 19, 15. <a href="https://doi.org/10.1186/s13059-017-1382-1" class="uri">https://doi.org/10.1186/s13059-017-1382-1</a></p>
+<p><strong>squidpy</strong><br>
+Palla, G., Spitzer, H., Klein, M., Fischer, D., Schaar, A. C., Kuemmerle, L. B., Rybakov, S., Ibarra, I. L., Holmberg, O., Virshup, I., Lotfollahi, M., Richter, S., &amp; Theis, F. J. (2022). <strong>Squidpy: a scalable framework for spatial omics analysis.</strong> <em>Nature Methods</em>, 19, 171–178. <a href="https://doi.org/10.1038/s41592-021-01358-2" class="uri">https://doi.org/10.1038/s41592-021-01358-2</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
