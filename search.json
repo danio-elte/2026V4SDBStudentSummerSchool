@@ -147,7 +147,7 @@
     "href": "index.html#confirmed-lecturers",
     "title": "2026 V4SDB Student Summer School Information",
     "section": "Confirmed lecturers",
-    "text": "Confirmed lecturers\n\nEnikő Lázár - KTH Royal Institute of Technology\nYinan Wan - Biozentrum, University of Basel\nJonathan Enriques - Institut de Génomique Fonctionnelle de Lyon\nKonstantin Khodosevich - BRIC University of Copenhagen\n\nOrganizer:\n\nMáté Varga - ELTE Eötvös Loránd University, Budapest, Hungary",
+    "text": "Confirmed lecturers\n\nEnikő Lázár - KTH Royal Institute of Technology\nYinan Wan - Biozentrum, University of Basel\nJonathan Enriquez - Institut de Génomique Fonctionnelle de Lyon\nKonstantin Khodosevich - BRIC University of Copenhagen\n\nOrganizer:\n\nMáté Varga - ELTE Eötvös Loránd University, Budapest, Hungary",
     "crumbs": [
       "Introduction"
     ]
@@ -254,6 +254,16 @@
     "crumbs": [
       "Sessions",
       "Visium"
+    ]
+  },
+  {
+    "objectID": "lectures.html#merfish-lecture-slides-jonathan-enriquez",
+    "href": "lectures.html#merfish-lecture-slides-jonathan-enriquez",
+    "title": "2026 V4SDB Student Summer School - Lectures",
+    "section": "MERFISH Lecture Slides (Jonathan Enriquez)",
+    "text": "MERFISH Lecture Slides (Jonathan Enriquez)\nJonathan Enriquez (Institut de Génomique Fonctionnelle de Lyon)\njonathan.enriquez@ens-lyon.fr",
+    "crumbs": [
+      "Lectures"
     ]
   }
 ]
